@@ -13,7 +13,7 @@ A hands-on cybersecurity home lab focused on developing practical junior SOC ana
 * Windows 10 target VM
 * Kali Linux VM
 * Ubuntu Linux VM
-* Oracle Virtual VM
+* Oracle VirtualBox VM
 * Windows Security Event Logs
 * Sysmon
 * Microsoft Sentinel / KQL - being added
@@ -33,7 +33,7 @@ A hands-on cybersecurity home lab focused on developing practical junior SOC ana
 * Network traffic analysis
 * MITRE ATT\&CK
 * Detection Engineering
-* Incident response documentation'
+* Incident response documentation
 * SOC playbook development
 * Python security automation
 
