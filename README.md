@@ -64,7 +64,7 @@ The investigation used an authorised Atomic Red Team test, correlated the activi
 
 During validation, I identified duplicate incidents caused by overlapping query windows. I tuned the rule using `ingestion_time()` and confirmed the result with a second controlled test.
 
-**Assessment:** Benign Positive.
+**Assessment:** Benign true positive.
 
 **Validation result:** One Atomic execution produced one security event, one alert and one incident after tuning.
 
