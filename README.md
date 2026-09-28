@@ -52,7 +52,7 @@ The investigation examined the account, timestamps, logon type, failure status, 
 
 **Assessment:** Likely benign.
 
-The original investigation was completed in Windows Event Viewer. A later Microsoft Sentinel follow-up verified that Windows Security telemetry was reaching the `SecurityEvent` table and reviewed authentication and privileged-logon events using KQL.
+The original investigation was completed in Windows Event Viewer. A later Microsoft Sentinel follow-up verified that Windows Security telemetry was reaching the `SecurityEvent` table and reviewed authentication and group-membership events using KQL.
 
 [View Investigation 001](investigations/001-windows-failed-logon/investigation.md)
 
