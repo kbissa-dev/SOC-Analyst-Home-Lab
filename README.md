@@ -70,7 +70,6 @@ During validation, I identified duplicate incidents caused by overlapping query 
 
 [View Investigation 002](investigations/002-wmi-spawned-powershell/investigation.md)
 
-````markdown
 ## Current Repository Structure
 
 ```text
@@ -83,3 +82,4 @@ SOC-Analyst-Home-Lab/
     └── 002-wmi-spawned-powershell/
         ├── investigation.md
         └── screenshots/
+```
