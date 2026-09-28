@@ -189,7 +189,7 @@ Post-logon process activity was not investigated during the original Event Viewe
 
 The later Sentinel follow-up verified ingestion and authentication-event visibility, but it did not establish whether suspicious activity occurred after the successful logon.
 
-The `4624` and `4625` events were not correlated using their Logon IDs.
+The Logon ID from the successful `4624` event was not used to correlate it with the `4627` event or with later activity.
 
 No Sentinel analytics rule, alert or incident was created during Case 001.
 
