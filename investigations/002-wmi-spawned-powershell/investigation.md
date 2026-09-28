@@ -55,7 +55,7 @@ The event showed:
 - **Command line:** `powershell.exe -NoProfile -C Write-Host <GUID>`
 - **Token Elevation Type:** `%%1937`
 
-Windows describes `%%1937` as Type 2, meaning an elevated token with no privileges removed or groups disabled. This indicates that the process ran with administrative privileges. It does not by itself prove that malicious privilege escalation occurred.
+Windows describes `%%1937` as Type 2, meaning an elevated token with no privileges removed or groups disabled. The Mandatory Label `S-1-16-12288` represents High integrity. Together, these fields show that the PowerShell process ran with elevated privileges. They do not by themselves prove that malicious privilege escalation occurred.
 
 ![Local Event ID 4688](screenshots/fig3-local-4688.png)
 
