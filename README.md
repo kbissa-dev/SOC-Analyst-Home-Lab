@@ -70,13 +70,16 @@ During validation, I identified duplicate incidents caused by overlapping query 
 
 [View Investigation 002](investigations/002-wmi-spawned-powershell/investigation.md)
 
-## Repository Structure
+````markdown
+## Current Repository Structure
 
 ```text
 SOC-Analyst-Home-Lab/
-├── investigations/    # SOC investigation case reports and evidence
-├── detections/        # Detection rules and detection logic
-├── kql/               # Microsoft Sentinel and KQL queries
-├── playbooks/         # Incident-response and triage playbooks
-└── scripts/           # Python and security automation
-```
+├── README.md
+└── investigations/
+    ├── 001-windows-failed-logon/
+    │   ├── investigation.md
+    │   └── screenshots/
+    └── 002-wmi-spawned-powershell/
+        ├── investigation.md
+        └── screenshots/
