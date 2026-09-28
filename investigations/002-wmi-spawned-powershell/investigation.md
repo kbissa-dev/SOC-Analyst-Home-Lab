@@ -202,6 +202,8 @@ The `ingestion_time() > ago(5m)` condition prevented duplicate processing during
 
 The investigation was conducted in an authorised home lab and does not demonstrate experience operating this rule in a production environment.
 
+During later lab maintenance, I observed an approximately 56-minute delay between TimeGenerated and ingestion_time() for some Windows Security events. Because this analytics rule uses a 10-minute TimeGenerated lookback, events experiencing a similar delay could arrive after leaving the rule’s search window and may not generate an alert. This delay was observed after Case 002 and does not prove that the original Case 002 event was delayed.
+
 ## Lessons Learned
 
 - A suspicious-looking parent process is an investigation lead, not a verdict.
