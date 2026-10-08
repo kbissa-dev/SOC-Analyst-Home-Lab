@@ -70,6 +70,16 @@ During validation, I identified duplicate incidents caused by overlapping query 
 
 [View Investigation 002](investigations/002-wmi-spawned-powershell/investigation.md)
 
+### Investigation 002A - Sentinel SOAR Triage and Containment Simulation
+
+Extended Investigation 002 with Microsoft Sentinel automation. An automation rule tags new incidents and runs a triage playbook that checks the live incident and skips closed or already-triaged incidents. A separate playbook, started manually by the analyst, records a containment simulation without changing the incident's status, severity or owner.
+
+Both playbooks use system-assigned managed identities with the Microsoft Sentinel Responder role, and duplicate runs are prevented with markers. I tested the open, closed, duplicate and forced-failure paths, and documented the limitations I could not verify.
+
+**Validation result:** Each playbook comments once per incident, intentional skips end as Cancelled, and a forced failure triggered the Azure Monitor alert.
+
+[View Investigation 002A](investigations/002a-sentinel-soar-automation/investigation.md)
+
 ## Current Repository Structure
 
 ```text
@@ -79,7 +89,11 @@ SOC-Analyst-Home-Lab/
     ├── 001-windows-failed-logon/
     │   ├── investigation.md
     │   └── screenshots/
-    └── 002-wmi-spawned-powershell/
+    ├── 002-wmi-spawned-powershell/
+    │   ├── investigation.md
+    │   └── screenshots/
+    └── 002a-sentinel-soar-automation/
         ├── investigation.md
         └── screenshots/
 ```
+
